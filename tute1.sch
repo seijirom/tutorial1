@@ -1,0 +1,198 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Tute 1"
+Date "20 aug 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 55C98937
+P 9300 3250
+F 0 "R2" V 9380 3250 40  0000 C CNN
+F 1 "1k" V 9307 3251 40  0000 C CNN
+F 2 "~" V 9230 3250 30  0000 C CNN
+F 3 "~" H 9300 3250 30  0000 C CNN
+	1    9300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 55C98AA1
+P 7150 4950
+F 0 "R1" V 7230 4950 40  0000 C CNN
+F 1 "100" V 7157 4951 40  0000 C CNN
+F 2 "~" V 7080 4950 30  0000 C CNN
+F 3 "~" H 7150 4950 30  0000 C CNN
+	1    7150 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PIC12C508A U1
+U 1 1 55C98C39
+P 7150 3700
+F 0 "U1" H 7150 4400 60  0000 C CNN
+F 1 "PIC12C508A" H 7150 3050 60  0000 C CNN
+F 2 "" H 7150 3700 60  0000 C CNN
+F 3 "" H 7150 3700 60  0000 C CNN
+	1    7150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 55C98CCB
+P 8650 3500
+F 0 "D1" H 8650 3600 50  0000 C CNN
+F 1 "LED" H 8650 3400 50  0000 C CNN
+F 2 "~" H 8650 3500 60  0000 C CNN
+F 3 "~" H 8650 3500 60  0000 C CNN
+	1    8650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MYCONN3 J1
+U 1 1 55D54C9B
+P 5950 4400
+F 0 "J1" H 5950 4400 60  0000 C CNN
+F 1 "MYCONN3" H 5950 4400 60  0000 C CNN
+F 2 "" H 5950 4400 60  0000 C CNN
+F 3 "" H 5950 4400 60  0000 C CNN
+	1    5950 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 55D54CDC
+P 9300 2650
+F 0 "#PWR01" H 9300 2750 30  0001 C CNN
+F 1 "VCC" H 9300 2750 30  0000 C CNN
+F 2 "" H 9300 2650 60  0000 C CNN
+F 3 "" H 9300 2650 60  0000 C CNN
+	1    9300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 55D54CEB
+P 6400 2700
+F 0 "#PWR02" H 6400 2800 30  0001 C CNN
+F 1 "VCC" H 6400 2800 30  0000 C CNN
+F 2 "" H 6400 2700 60  0000 C CNN
+F 3 "" H 6400 2700 60  0000 C CNN
+	1    6400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 55D54CFA
+P 6750 4500
+F 0 "#PWR03" H 6750 4600 30  0001 C CNN
+F 1 "VCC" H 6750 4600 30  0000 C CNN
+F 2 "" H 6750 4500 60  0000 C CNN
+F 3 "" H 6750 4500 60  0000 C CNN
+	1    6750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 55D54D23
+P 8050 3350
+F 0 "#PWR04" H 8050 3350 30  0001 C CNN
+F 1 "GND" H 8050 3280 30  0001 C CNN
+F 2 "" H 8050 3350 60  0000 C CNN
+F 3 "" H 8050 3350 60  0000 C CNN
+	1    8050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 55D54D38
+P 6750 5450
+F 0 "#PWR05" H 6750 5450 30  0001 C CNN
+F 1 "GND" H 6750 5380 30  0001 C CNN
+F 2 "" H 6750 5450 60  0000 C CNN
+F 3 "" H 6750 5450 60  0000 C CNN
+	1    6750 5450
+	1    0    0    -1  
+$EndComp
+Text Label 8100 3500 0    60   ~ 0
+uCtoLED
+Wire Wire Line
+	7850 3500 8450 3500
+Wire Wire Line
+	6400 2700 6400 3200
+Wire Wire Line
+	8850 3500 9300 3500
+Wire Wire Line
+	9300 2650 9300 3000
+Wire Wire Line
+	6750 4500 6750 4650
+Wire Wire Line
+	6750 4650 6600 4650
+Wire Wire Line
+	6600 4950 6900 4950
+Wire Wire Line
+	6600 5250 6750 5250
+Wire Wire Line
+	6750 5250 6750 5450
+Wire Wire Line
+	7850 3200 8050 3200
+Wire Wire Line
+	8050 3200 8050 3350
+Text Label 9050 3500 0    60   ~ 0
+LEDtoR
+Text Label 6650 4950 0    60   ~ 0
+INPUTtoR
+NoConn ~ 6400 3500
+NoConn ~ 6400 3900
+NoConn ~ 6400 4200
+NoConn ~ 7850 4200
+Wire Wire Line
+	7850 3900 8250 3900
+NoConn ~ 9700 5150
+NoConn ~ 7850 5700
+Text Label 8050 3900 0    60   ~ 0
+INPUT
+Wire Wire Line
+	7400 4950 7900 4950
+Text Label 7650 4950 0    60   ~ 0
+INPUT
+$EndSCHEMATC

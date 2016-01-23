@@ -1,0 +1,38 @@
+Cmp-Mod V01 Created by CvPcb (2013-june-11)-stable date = 2015年08月20日 20時45分26秒
+
+BeginCmp
+TimeStamp = /55C98CCB;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LEDV;
+EndCmp
+
+BeginCmp
+TimeStamp = /55D54C9B;
+Reference = J1;
+ValeurCmp = MYCONN3;
+IdModule  = 3PIN_6mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C98AA1;
+Reference = R1;
+ValeurCmp = 100;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C98937;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C98C39;
+Reference = U1;
+ValeurCmp = PIC12C508A;
+IdModule  = DIP-8__300;
+EndCmp
+
+EndListe
